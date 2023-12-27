@@ -1,0 +1,18 @@
+{
+  "1":{
+    "title":"Introduction",
+    "text":"Hello! I'm ink, a math nerd and loves to code."
+  },
+  "2": {
+    "title":"Projects",
+    "text":"Some projects of mines are the following (and can be found on github): an Atari Breakout clone and a calculator for the Collatz conjecture."
+  },
+  "3": {
+    "title":"Skills",
+    "text":"Programming languages I am most proficient in are Java and C#, but I can also code in Python, C++, and JavaScript. I am also fairly good in web development."
+  },
+  "4": {
+  "title":"Contact",
+  "text":"To contact me, you can send me a message on Discord: @xyink, you can also contact me on twitter: @xy_ink"
+  }
+}

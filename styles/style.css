@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
+
+* {
+    background-color: #1b1c1c;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aquamarine;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.title:hover {
+    transition: 1s;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.articleTitle {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: cornflowerblue;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.nav {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+}
+
+.hoover {
+    transform: translate(0%,0%);
+    color: plum;
+    transition: 0.5s;
+}
+
+.hoover:hover {
+    color: orchid;
+    transition: 0.5s;
+}
+
+.articleHoover {
+    transform: translate(-10%,0%);
+    color: fuchsia;
+    transition: 0.5s;
+}
+
+.articleHoover:hover {
+    color: darkviolet;
+    transition: 0.5s;
+}
+
+.article {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.hidden {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    transition: 0.5s;
+}
