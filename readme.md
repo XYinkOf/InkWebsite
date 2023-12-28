@@ -60,7 +60,7 @@ A waypoint visualizer for Hypixel Skyblock made with Java using JavaFX.
 
 
 ## <a href="https://github.com/XYinkOf/BrickBreaker">Brick Breaker</a>
-<img src="images/brickbreaker.png" height=70 alt="Brick Breaker Logo">
+<img src="images/brickBreaker.png" height=70 alt="Brick Breaker Logo">
 
 A simple brick breaker game made with Java using JavaFX.
 
