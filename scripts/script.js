@@ -1,4 +1,5 @@
 let articleOpened = 0;
+let oldArticleOpened = 0;
 
 function prepareForArticle() {
     if(articleOpened !== 0) {
@@ -33,9 +34,24 @@ function openArticle(article) {
     //change article tags
     document.getElementById("articleTitle").className = "visible";
     document.getElementById("articleText").className = "visible";
+
+    // show more button
+
+    if(oldArticleOpened === 0) {
+        setTimeout(function (){
+            document.getElementById("more").className = "visible";
+        }, 500);
+    }
+    else
+    {
+        document.getElementById("more").className = "visible";
+    }
 }
 
 function closeArticle() {
+
+    oldArticleOpened = articleOpened;
+
     document.getElementById(articleOpened.toString()).className = "hoover";
     articleOpened = 0;
     prepareForArticle();
@@ -43,18 +59,54 @@ function closeArticle() {
     //change article tags
     document.getElementById("articleTitle").className = "hidden";
     document.getElementById("articleText").className = "hidden";
+
+    // hide more button
+    document.getElementById("more").className = "hidden";
 }
 
 function checkToCloseArticle() {
+
     const specifiedElement = document.getElementById('nav');
+    const specifiedElement2 = document.getElementById('article');
+    const specifiedElement3 = document.getElementById('more');
 
     document.addEventListener('click', event => {
-        const isClickInside = specifiedElement.contains(event.target)
+        const isClickInside = specifiedElement.contains(event.target);
+        const isClickInside2 = specifiedElement2.contains(event.target);
+        const isClickInside3 = specifiedElement3.contains(event.target);
 
-        if (!isClickInside) {
+        if (!isClickInside && !isClickInside2 && !isClickInside3) {
             closeArticle();
+
+            oldArticleOpened = 0;
         }
     })
+}
+
+function knowMore() {
+    if(articleOpened === 0) {
+        return;
+    }
+    //read JSON file
+    let articles = readTextFile("../articles/articles.json");
+
+    //parse JSON file
+    let articlesParsed = JSON.parse(articles);
+
+    window.open("articlePages/" + articlesParsed[articleOpened].title.toLowerCase() + ".html", "_self");
+}
+
+function goBack() {
+    window.open("../index.html", "_self");
+}
+
+function projectPage(project) {
+    window.open("../articleProjects/" + project.toLowerCase() + ".html", "_self");
+}
+
+function openProject(project) {
+    window.open("https://github.com/XYinkOf/" + project, "_blank");
+
 }
 
 function loadTitlesAndArticles() {

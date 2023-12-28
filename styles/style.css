@@ -46,6 +46,11 @@ a {
     z-index: -1;
 }
 
+.articleTitle:hover {
+    transition: 1s;
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
 .nav {
     font-family: 'Roboto', sans-serif;
     position: absolute;
@@ -95,5 +100,49 @@ a {
 
 .visible {
     opacity: 1;
+    transition: 0.5s;
+}
+
+.more {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.more:hover {
+    transition: 1s;
+    transform: translate(-50%, -50%) rotate(5deg);
+}
+
+.sideImage {
+    position: absolute;
+    top: 50%;
+    left: -25%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.projects {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectImage {
+    margin: 10px;
+}
+
+.projectImage:hover {
+    transform: scale(1.1);
     transition: 0.5s;
 }
