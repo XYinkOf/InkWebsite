@@ -121,6 +121,24 @@ a {
     transform: translate(-50%, -50%) rotate(5deg);
 }
 
+.less {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    text-decoration: underline;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.less:hover {
+    transition: 1s;
+    transform: translate(-50%, -50%) rotate(-5deg);
+}
+
 .sideImage {
     position: absolute;
     top: 50%;
