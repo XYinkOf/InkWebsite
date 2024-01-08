@@ -100,6 +100,10 @@ function goBack() {
     window.open("../index.html", "_self");
 }
 
+function goBackProject() {
+    window.open("../articlePages/projects.html", "_self");
+}
+
 function projectPage(project) {
     window.open("../articleProjects/" + project.toLowerCase() + ".html", "_self");
 }
