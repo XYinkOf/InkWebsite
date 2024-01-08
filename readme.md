@@ -26,10 +26,6 @@ Java is #1 in my heart, but I also like C# and C++. Python sucks. F tier.
 
 VSC ain't my thing, JetBrains just works so much better. I use IntelliJ for Java, Webstorm for Web Dev and for C#, I use VS 2022.
 
-**Kotlin or Java?**
-
-I have not yet tried Kotlin, but I am sure it's a great programming language as it managed to replace Java in most domains.
-
 **Do you have a website?**
 
 This one.
@@ -63,6 +59,12 @@ A waypoint visualizer for Hypixel Skyblock made with Java using JavaFX.
 <img src="images/brickBreaker.png" height=70 alt="Brick Breaker Logo">
 
 A simple brick breaker game made with Java using JavaFX.
+
+
+## <a href="https://github.com/XYinkOf/graphr">GraphR</a>
+<img src="images/graphr.png" height=70 alt="GraphR Logo">
+
+A graphing calculator for Collatz Conjecture made with Java using JavaFX.
 
 
 ## <a href="https://github.com/XYinkOf/InkWebsite">Ink's Website</a>
